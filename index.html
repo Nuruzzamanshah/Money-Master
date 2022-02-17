@@ -32,7 +32,7 @@
                       <label  class="form-label">Food:</label>
                     </div>
                     <div class="col-10">
-                      <input type="number" id="input-Food" class="form-control">
+                      <input type="number" id="input-food" class="form-control">
                     </div>
                 </div>
                 <div class="row p-2 ">
@@ -40,7 +40,7 @@
                       <label  class="form-label">Rent:</label>
                     </div>
                     <div class="col-10">
-                      <input type="number" id="input-Rent" class="form-control">
+                      <input type="number" id="input-rent" class="form-control">
                     </div>
                 </div>
                 <div class="row  p-2 ">
@@ -48,11 +48,11 @@
                       <label  class="form-label">Clothes:</label>
                     </div>
                     <div class="col-10">
-                      <input type="number" id="input-Clothes" class="form-control">
+                      <input type="number" id="input-clothes" class="form-control">
                     </div>
                 </div>
                 <div class="button-cal text-center">
-                <button  type="button" id="calBtn" class="btn btn-primary">Calculate</button>
+                <button  type="button" onclick="calBtn()" id="calBtn" class="btn btn-primary">Calculate</button>
                 </div>
                 <h3 class="p-2 text-center" id="total-exp">Total Expenses:</h3>
                 <h3 class="p-2 text-center">Balance: <span id="blance"></span></h3>
@@ -67,7 +67,7 @@
                         <label  class="form-label">%</label>
                     </div>
                     <div class="parcent-input col-4">
-                        <button  type="button" id="saveamount" class="btn btn-primary">Save</button>
+                        <button  type="button" onclick="saveamount()" id="saveamount" class="btn btn-primary">Save</button>
                     </div>
                 </div>
                 <h3 class="p-2 text-center" >Saving Amount: <span id="saving"></span></h3>

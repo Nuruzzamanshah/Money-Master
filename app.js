@@ -4,11 +4,15 @@ function calBtn() {
     const clothesCost = document.getElementById('input-clothes').value;
     const totalexpence =  parseInt(foodCost)+ parseInt(rentCost)+ parseInt(clothesCost);
     const income = document.getElementById('income').value;
+    
     if(foodCost < 0 || rentCost < 0 || clothesCost < 0 || income < 0){
         alert('Please input possitive value');
         return;
     }
-
+    if ( income < totalexpence){
+        alert('Sorry you  have enough money not!');
+        return;
+    }
     document.getElementById('total-exp').innerText = totalexpence;
    
     const blance =  parseInt(income) - totalexpence;
@@ -24,6 +28,10 @@ function saveAmount() {
     const income = document.getElementById('income').value;
     const blance = document.getElementById('blance').innerText;
     const saving =parseInt(income) * parseInt(parcentagemany) /100 ;
+    if ( income < saving){
+        alert('Sorry you  have enough money not!');
+        return;
+    }
     document.getElementById('saving').innerText = saving;
     const remainingb =  blance - saving;
     document.getElementById('remainingb').innerText = remainingb;

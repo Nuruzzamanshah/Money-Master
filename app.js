@@ -35,7 +35,5 @@ function saveAmount() {
     document.getElementById('saving').innerText = saving;
     const remainingb =  blance - saving;
     document.getElementById('remainingb').innerText = remainingb;
-
-    
  }
 
